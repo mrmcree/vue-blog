@@ -3,7 +3,7 @@
     <div class="wrap" v-for="(item,index) in postdata" :key="index">
       <div class="post-img">
         <router-link :to="{name:'detail',params:{id:item.id}}">
-          <img :height="imgheight" :width="imgwidth" :src="item.imgUrl">
+          <imgs :height="imgheight" :width="imgwidth" src="https://ws1.sinaimg.cn/large/95ebe14fgy1g1wdqmpexfj218g0xckhc.jpg"></imgs>
         </router-link>
       </div>
       <div class="post-title">{{item.title}}</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+  var data={
+    name:'ddddd'
+  }
+  $.ajax({
+    url:'./addpost.php',
+    type:'post',
+    data:data
+  }).done(function (e) {
+    console.log(e)
+  })
+
+</script>
+</body>
+</html>
